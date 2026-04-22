@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NARRATIVE — Portfolio</title>
+    <meta
+      name="description"
+      content="A minimal editorial portfolio with selected work, about, and contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="bar">
+        <div class="bar__left">
+          <a class="micro-link" href="#top" aria-label="Home">NARRATIVE</a>
+        </div>
+        <div class="bar__right">
+          <a class="micro-link" href="#contact">Get in touch</a>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+            <span class="menu-btn__label">Menu</span>
+            <span class="menu-btn__icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__item" href="#studio">Studio narrative</a>
+        <span class="nav__divider" aria-hidden="true"></span>
+        <p class="nav__meta" id="tagline">
+          Based in <span data-field="location">Your City</span> with
+          <span data-field="experienceYears">8</span> years of digital experience
+        </p>
+        <span class="nav__spacer" aria-hidden="true"></span>
+        <a class="nav__item" href="#works">Featured works</a>
+        <a class="nav__item" href="#about">About</a>
+      </nav>
+
+      <div class="mast">
+        <h1 class="wordmark">
+          <span class="wordmark__line">NARRATIVE</span>
+        </h1>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <section class="hero" aria-label="Selected photo">
+        <figure class="frame">
+          <img
+            alt="A cinematic overhead photo used as a hero image."
+            loading="eager"
+            src="https://images.unsplash.com/photo-1520975693411-b5b69aefc9ae?auto=format&fit=crop&w=2400&q=80"
+          />
+        </figure>
+      </section>
+
+      <section id="studio" class="section section--split" aria-label="Studio">
+        <div class="section__head">
+          <p class="kicker">Narrative</p>
+          <h2 class="section__title">Creating next-level digital products</h2>
+        </div>
+        <div class="section__body">
+          <p class="lede" data-field="bio">
+            I design and build crisp websites, brands, and product experiences with an editorial
+            approach: bold type, restrained palettes, and purposeful motion.
+          </p>
+          <div class="facts">
+            <div class="fact">
+              <p class="fact__k">Focus</p>
+              <p class="fact__v">Design systems, front-end, brand</p>
+            </div>
+            <div class="fact">
+              <p class="fact__k">Availability</p>
+              <p class="fact__v">New projects — <span data-field="availability">May 2026</span></p>
+            </div>
+            <div class="fact">
+              <p class="fact__k">Email</p>
+              <p class="fact__v">
+                <a class="text-link" data-field="email" href="mailto:hello@example.com"
+                  >hello@example.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="section" aria-label="Featured works">
+        <div class="section__row">
+          <div class="section__head">
+            <p class="kicker">Selected</p>
+            <h2 class="section__title">Featured works</h2>
+          </div>
+          <div class="section__body">
+            <div class="works">
+              <ol class="works__list" id="worksList" aria-label="Project list"></ol>
+              <div class="works__preview">
+                <figure class="frame frame--soft">
+                  <img
+                    id="workPreviewImg"
+                    alt="Preview image for the selected project."
+                    loading="lazy"
+                    src=""
+                  />
+                </figure>
+                <div class="works__details" id="workDetails" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <div class="grid">
+              <figure class="tile frame frame--soft">
+                <img
+                  alt="A secondary portfolio image."
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1600&q=80"
+                />
+              </figure>
+              <figure class="tile frame frame--soft">
+                <img
+                  alt="A secondary portfolio image."
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1520975867597-0f7ac21adf11?auto=format&fit=crop&w=1600&q=80"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about" aria-label="About">
+        <div class="section__row">
+          <div class="section__head">
+            <p class="kicker">About</p>
+            <h2 class="section__title">A compact studio with big taste</h2>
+          </div>
+          <div class="section__body">
+            <div class="about">
+              <div class="about__copy">
+                <p data-field="about1">
+                  I’m a designer/developer who likes clear structure, sharp typography, and systems
+                  that scale. My work lives between brand and product — from identity to UI, from
+                  prototype to production.
+                </p>
+                <p data-field="about2">
+                  If you want a portfolio like this, we can start from a single page and expand to
+                  case studies as you ship more work.
+                </p>
+                <ul class="chips" aria-label="Services">
+                  <li class="chip">Brand</li>
+                  <li class="chip">Web design</li>
+                  <li class="chip">Front-end</li>
+                  <li class="chip">Motion</li>
+                </ul>
+              </div>
+              <div class="about__side">
+                <div class="mini">
+                  <p class="mini__k">Links</p>
+                  <div class="mini__v">
+                    <a class="text-link" data-field="link1" href="#" target="_blank" rel="noreferrer"
+                      >Behance</a
+                    >
+                    <a class="text-link" data-field="link2" href="#" target="_blank" rel="noreferrer"
+                      >GitHub</a
+                    >
+                    <a class="text-link" data-field="link3" href="#" target="_blank" rel="noreferrer"
+                      >LinkedIn</a
+                    >
+                  </div>
+                </div>
+                <div class="mini">
+                  <p class="mini__k">Tools</p>
+                  <p class="mini__v">Figma, React, TypeScript, Motion, Webflow</p>
+                </div>
+                <div class="mini">
+                  <p class="mini__k">Currently</p>
+                  <p class="mini__v">
+                    Building a small set of reusable components for fast, high-quality launches.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact" aria-label="Contact">
+        <div class="section__row">
+          <div class="section__head">
+            <p class="kicker">Contact</p>
+            <h2 class="section__title">Let’s build something clean</h2>
+          </div>
+          <div class="section__body">
+            <div class="contact">
+              <div class="contact__copy">
+                <p>
+                  Send a short brief and I’ll reply with questions, timeline, and a clear estimate.
+                </p>
+                <p class="contact__cta">
+                  <a class="btn" data-field="emailBtn" href="mailto:hello@example.com"
+                    >Email me</a
+                  >
+                  <a class="btn btn--ghost" href="#works">View work</a>
+                </p>
+              </div>
+              <form class="form" id="contactForm">
+                <label class="field">
+                  <span class="field__k">Name</span>
+                  <input name="name" autocomplete="name" required />
+                </label>
+                <label class="field">
+                  <span class="field__k">Email</span>
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+                <label class="field field--full">
+                  <span class="field__k">Message</span>
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <div class="form__row">
+                  <button class="btn" type="submit">Send</button>
+                  <p class="micro" id="formNote">
+                    This form opens your email app (no backend).
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="micro">© <span id="year"></span> <span data-field="name">Your Name</span></p>
+        <a class="micro-link" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <aside class="overlay" id="menu" aria-hidden="true">
+      <div class="overlay__inner">
+        <p class="overlay__kicker">Navigation</p>
+        <a class="overlay__link" href="#top">Home</a>
+        <a class="overlay__link" href="#studio">Studio</a>
+        <a class="overlay__link" href="#works">Works</a>
+        <a class="overlay__link" href="#about">About</a>
+        <a class="overlay__link" href="#contact">Contact</a>
+        <div class="overlay__meta">
+          <p class="micro">Press “Esc” to close</p>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
